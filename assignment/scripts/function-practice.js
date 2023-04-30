@@ -60,7 +60,7 @@ function getLast( array ) {
   if ( array.length > 0 )
   return array[ array.length - 1 ]
   else
-  return 'Undefined'
+  return undefined
 
 }
 console.log('In Question #6.', getLast(['Chips', 'Salsa', 'Ground Beef', 'Cheese']))
@@ -71,12 +71,12 @@ console.log('In Question #6.', getLast(['Chips', 'Salsa', 'Ground Beef', 'Cheese
 function find( value, array ) {
   for( i in array ){
     if( array[ i ] === value )
-    console.log( array[ i ], true );
+    return true;
     else
-    console.log( array[ i ], false );
+    return false;
   }
 }
-console.log(find('6', ['1', '5', '3', '7', '9', '6']))
+console.log(find(6, [6, 5, 3, 7, 9, 1]))
 
 // ----------------------
 // Stretch Goals
